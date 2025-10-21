@@ -95,7 +95,7 @@ const MEETINGS = [
             "K členeniu sme spracovali dokument, ktorý zahŕňa jednotlivé časti dokumentov.",
         ],
         actions: [
-            { task: "Nájsť versatilný spôsob chunkovania dokumentov", owner: "Martin, Matúš", due: "2025-10-19", status: "open" },
+            { task: "Nájsť versatilný spôsob chunkovania dokumentov", owner: "Martin, Matúš", due: "2025-10-19", status: "done" },
             { task: "Získať od vedúcich prístup k VPS + setup VPS", owner: "Cyril, Matúš", due: "2025-10-14", status: "open" },
             { task: "Vytoriť základný backend s pripojením na databázu (stĺpec s vektorovými embeddingami)", owner: "Adam", due: "2025-10-19", status: "open" },
             { task: "Otestovať spôsoby chunkovania dokumentov.", owner: "Matúš", due: "2025-10-26", status: "open" },
