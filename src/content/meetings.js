@@ -109,6 +109,45 @@ const MEETINGS = [
             { owner: "Alexander", task: "Návrh technologického stacku pre vývoj frontendu - Frontent bude implementovaný vo frameworku React", status: "done" },
         ],
     },
+    {
+        id: "2025-10-20-backend-chunking",
+        type: "brief",
+        title: "Vektorové databázy a chunking",
+        date: "2025-10-20",
+        startTime: "16:00",
+        endTime: "17:00",
+        location: "Discord",
+        recorder: "Cyril Beňačka",
+        attendees: [
+            "Martin Bartoš",
+            "Cyril Beňačka",
+            "Matúš Bednařík",
+            "Alexander Hulla",
+            "Adam Jánoš"
+        ],
+        agenda: [
+            { topic: "Backend pre vektorové databázy", summary: "Prejsť výsledky Adamovej práce." },
+            { topic: "Chunking dokumentov", summary: "Prejsť výsledky Matúšovej a Martinovej práce." },
+        ],
+        decisions: [
+            "Na účely vektorovej databázy, aspoň zo začiatku, použijeme ChromaDB. Je jednoduchá na pochopenie a nastavenie.",
+            "Vypracovali sme konkrétny postup, akým sa budú chunkovať dokumenty.",
+            "Využijeme sémantický chunking a Langchain knižnicu."
+        ],
+        actions: [
+
+        ],
+        previousTasksReview: [
+            { owner: "Cyril", task: "Vytvoriť WWW stránku s dokumenáciou a zápisnicami", status: "done", notes: "Stránka bola nasadená a dodaná." },
+            { owner: "Martin, Matúš", task: "Nájsť versatilný spôsob chunkovania dokumentov", status: "done" },
+            { task: "Vytoriť základný backend s pripojením na databázu (stĺpec s vektorovými embeddingami)", owner: "Adam", status: "in-progress", notes: "Je nutné ho presne implementovať a nasadiť." },
+            { task: "Získať od vedúcich prístup k VPS + setup VPS", owner: "Cyril, Matúš", status: "in-progress" },
+            { task: "Otestovať spôsoby chunkovania dokumentov.", owner: "Matúš", status: "in-progress" },
+            { task: "Vytvoriť GitHub repozitár pre projekt (Docker, Backend, Frontend)", owner: "Cyril", status: "in-progress" },
+            { task: "Základný projekt pre frontend a návrh UI", owner: "Alex", status: "in-progress", notes: "Zmena termínu na 23.10." },
+            { task: "Dodať web stránku s projektovou dokumentáciou", owner: "Matúš, Cyril", status: "done", notes: "Stránku sme odoslali na mail." },
+        ],
+    },
 ];
 
 export default MEETINGS;
