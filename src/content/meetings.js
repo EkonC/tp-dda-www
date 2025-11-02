@@ -96,11 +96,11 @@ const MEETINGS = [
         ],
         actions: [
             { task: "Nájsť versatilný spôsob chunkovania dokumentov", owner: "Martin, Matúš", due: "2025-10-19", status: "done" },
-            { task: "Získať od vedúcich prístup k VPS + setup VPS", owner: "Cyril, Matúš", due: "2025-10-14", status: "open" },
-            { task: "Vytoriť základný backend s pripojením na databázu (stĺpec s vektorovými embeddingami)", owner: "Adam", due: "2025-10-19", status: "open" },
-            { task: "Otestovať spôsoby chunkovania dokumentov.", owner: "Matúš", due: "2025-10-26", status: "open" },
+            { task: "Získať od vedúcich prístup k VPS + setup VPS", owner: "Cyril, Matúš", due: "2025-10-14", status: "done" },
+            { task: "Vytoriť základný backend s pripojením na databázu (stĺpec s vektorovými embeddingami)", owner: "Adam", due: "2025-10-19", status: "done" },
+            { task: "Otestovať spôsoby chunkovania dokumentov.", owner: "Matúš", due: "2025-10-26", status: "done" },
             { task: "Vytvoriť GitHub repozitár pre projekt (Docker, Backend, Frontend)", owner: "Cyril", due: "2025-10-26", status: "open" },
-            { task: "Základný projekt pre frontend a návrh UI", owner: "Alex", due: "2025-10-21", status: "open" },
+            { task: "Základný projekt pre frontend a návrh UI", owner: "Alex", due: "2025-10-21", status: "done" },
             { task: "Dodať web stránku s projektovou dokumentáciou", owner: "Matúš, Cyril", due: "2025-10-12", status: "done" },
         ],
         previousTasksReview: [
@@ -146,6 +146,49 @@ const MEETINGS = [
             { task: "Vytvoriť GitHub repozitár pre projekt (Docker, Backend, Frontend)", owner: "Cyril", status: "in-progress" },
             { task: "Základný projekt pre frontend a návrh UI", owner: "Alex", status: "in-progress", notes: "Zmena termínu na 23.10." },
             { task: "Dodať web stránku s projektovou dokumentáciou", owner: "Matúš, Cyril", status: "done", notes: "Stránku sme odoslali na mail." },
+        ],
+    },
+    {
+        id: "2025-10-29-standup",
+        type: "brief",
+        title: "Stand-up meeting",
+        date: "2025-10-29",
+        startTime: "11:40",
+        endTime: "12:20",
+        location: "Unispace FEI STU + Discord",
+        recorder: "Cyril Beňačka",
+        attendees: [
+            "Martin Bartoš",
+            "Cyril Beňačka",
+            "Matúš Bednařík",
+            "Alexander Hulla",
+            "Adam Jánoš"
+        ],
+        agenda: [
+            { topic: "Stand-up meeting", summary: "Prejsť výsledky našej práce, zhodnotiť čo nás blokuje a určiť na čom budeme pracovať do nasledujúceho meetingu." },
+        ],
+        decisions: [
+            "Budeme pokračovať v práci na implementácii frontendu.",
+            "Budeme pracovať na ďalších možnostiach chunkingu dokumentov.",
+            "Vytvoríme základné endpointy na backende.",
+            "Integrujeme jednotlivé časti do jednotného projektu."
+        ],
+        actions: [
+            { task: "Príprava pre CRUD operácie na frontende", owner: "Alex", due: "2025-11-4", status: "in-progress" },
+            { task: "Frontend - vytváranie projektov", owner: "Alex", due: "2025-11-4", status: "in-progress" },
+            { task: "Dizajn chatu", owner: "Alex", due: "2025-11-4", status: "in-progress" },
+            { task: "Nájsť vhodnejší spôsob chunkovania", owner: "Matúš", due: "2025-11-4", status: "in-progress" },
+            { task: "Integrácia OpenAI API kľúča", owner: "Matúš", due: "2025-11-4", status: "in-progress" },
+            { task: "Vytvoriť základnú architektúru backendu", owner: "Adam", due: "2025-11-4", status: "in-progress" },
+            { task: "Implementovať základné API endpointy", owner: "Adam", due: "2025-11-4", status: "in-progress" },
+            { task: "Nájsť vhodnejší spôsob chunkovania", owner: "Martin", due: "2025-11-4", status: "in-progress" },
+        ],
+        previousTasksReview: [
+            { task: "Vytoriť základný backend s pripojením na databázu (stĺpec s vektorovými embeddingami)", owner: "Adam", status: "done" },
+            { task: "Získať od vedúcich prístup k VPS + setup VPS", owner: "Cyril, Matúš", status: "done", notes: "Prístup k VPS nám v PwC nie sú schopní poskytnúť, stačí to mať lokálne a následne odprezentovať." },
+            { task: "Otestovať spôsoby chunkovania dokumentov.", owner: "Matúš", status: "done" },
+            { task: "Vytvoriť GitHub repozitár pre projekt (Docker, Backend, Frontend)", owner: "Cyril", status: "in-progress" },
+            { task: "Základný projekt pre frontend a návrh UI", owner: "Alex", status: "done" },
         ],
     },
 ];
