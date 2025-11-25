@@ -327,7 +327,7 @@ const MEETINGS = [
                 task: "Navrhnúť úpravy dizajnu frontendu podľa dohody",
                 owner: "Cyril",
                 due: "2025-11-19",
-                status: "in-progress",
+                status: "done",
             },
             {
                 task: "Pomôcť tímu s rozbehaním Docker prostredia na lokálnych strojoch",
@@ -357,13 +357,13 @@ const MEETINGS = [
                 task: "Integrovať Bedrock Cohere pomocou Botocore knižnice a experimentovať s rerankingom",
                 owner: "Matúš",
                 due: "2025-11-26",
-                status: "in-progress",
+                status: "done",
             },
             {
                 task: "Pracovať na autentifikácii a pripraviť backend endpointy podľa dokumentácie od Alexa",
                 owner: "Adam",
                 due: "2025-11-19",
-                status: "in-progress",
+                status: "done",
             },
             {
                 task: "Pokračovať vo vizualizácii vektorových embeddingov (PCA, t-SNE, UMAP) a posúdiť kvalitu chunkovania",
@@ -404,6 +404,117 @@ const MEETINGS = [
             },
         ],
     },
+    {
+        id: "2025-11-21-standup",
+        type: "brief",
+        title: "Stand-up meeting",
+        date: "2025-11-21",
+        startTime: "11:30",
+        endTime: "12:00",
+        location: "Unispace FEI STU",
+        recorder: "Cyril Beňačka",
+        attendees: [
+            "Cyril Beňačka",
+            "Alexander Hulla",
+            "Matúš Bednařík",
+            "Adam Jánoš",
+            "Martin Bartoš",
+        ],
+        agenda: [
+            {
+                topic: "Stand-up meeting",
+                summary: "Prejsť výsledky práce od posledného stretnutia, blokery a plán do ďalšieho stand-upu.",
+            },
+        ],
+        decisions: [
+            "Priorita je zdokonalenie frontendu (najmä chat projektu) a dokončenie sidebaru + profil/settings.",
+            "Backend bude pokračovať v implementácii endpointov podľa špecifikácie z frontendu.",
+            "AI časť sa sústredí na rozšírenie human-in-the-loop a optimalizáciu rýchlosti generovania, zároveň pokračuje hľadanie ideálneho chunkovania a vizualizácie embeddingov.",
+        ],
+        actions: [
+            {
+                task: "Zdokonaliť frontend (hlavne stránku chatu projektu)",
+                owner: "Cyril",
+                due: "2025-11-28",
+                status: "open",
+            },
+            {
+                task: "Zergovať vyvinuté časti do main vetvy",
+                owner: "Cyril",
+                due: "2025-11-28",
+                status: "open",
+            },
+            {
+                task: "Dokončiť sidebar + user profile + settings",
+                owner: "Alex",
+                due: "2025-11-28",
+                status: "open",
+            },
+            {
+                task: "Rozšíriť human-in-the-loop interakciu s chatbotom",
+                owner: "Matúš",
+                due: "2025-11-28",
+                status: "open",
+            },
+            {
+                task: "Optimalizovať rýchlosť generovania (zrýchlenie pipeline)",
+                owner: "Matúš",
+                due: "2025-11-28",
+                status: "open",
+            },
+            {
+                task: "Implementovať backend endpointy podľa špecifikácie od Alexa",
+                owner: "Adam",
+                due: "2025-11-28",
+                status: "open",
+            },
+            {
+                task: "Pokračovať v hľadaní ideálneho chunkovania dokumentov",
+                owner: "Martin",
+                due: "2025-11-28",
+                status: "open",
+            },
+            {
+                task: "Pokračovať vo vizualizácii embeddingov a posúdení kvality chunkovania",
+                owner: "Martin",
+                due: "2025-11-28",
+                status: "open",
+            },
+        ],
+        previousTasksReview: [
+            {
+                owner: "Cyril",
+                task: "Dizajnové úpravy frontendu (autentifikácia, dark mode)",
+                status: "done",
+            },
+            {
+                owner: "Alex",
+                task: "Práca na sidebare",
+                status: "in-progress",
+            },
+            {
+                owner: "Matúš",
+                task: "Rozbehanie Bedrock Cohere (cez API) + nový ingestion skript (JSON kostra dokumentov/sekcií)",
+                status: "done",
+                notes: "Botocore integrácia nebola použitá; prístup riešený cez API. Kostra dokumentu (JSON) sa využíva pri dopĺňaní sekcií.",
+            },
+            {
+                owner: "Adam",
+                task: "Backend autentifikácia",
+                status: "done",
+            },
+            {
+                owner: "Martin",
+                task: "Analýza structured output (LangChain) + manuálne posúdenie chunkov",
+                status: "in-progress",
+            },
+            {
+                owner: "Martin",
+                task: "Rozbehanie Dockeru",
+                status: "in-progress",
+            },
+        ],
+    }
 ];
 
 export default MEETINGS;
